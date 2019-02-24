@@ -101,6 +101,13 @@ public class MainController implements Initializable {
 				   			this.StoreUnit.getText(),this.StoreDateIn.getValue(),this.StoreExpiredDate.getValue());
 		   
 	   }
+	   public void clearDataValues(ActionEvent event) {
+		   this.StoreName.clear();
+		   this.StorePos.clear();
+		   this.StoreAmount.clear();
+		   this.StoreUnit.clear();
+		   
+	   }
 	   
   
 }
