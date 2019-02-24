@@ -7,23 +7,23 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="1000.0" prefWidth="1000.0" style="-fx-background-color: #14b4d2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FridgeMonitor.MainController">
+<AnchorPane prefHeight="754.0" prefWidth="699.0" style="-fx-background-color: #14b4d2;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FridgeMonitor.MainController">
    <children>
-      <Text layoutX="258.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fridge Monitor" wrappingWidth="483.341796875">
+      <Text layoutX="138.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fridge Monitor" wrappingWidth="431.341796875">
          <font>
             <Font size="64.0" />
          </font>
       </Text>
-      <AnchorPane fx:id="PageOne" layoutX="30.0" layoutY="320.0" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #5a739a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+      <AnchorPane fx:id="PageOne" layoutX="30.0" layoutY="267.0" prefHeight="487.0" prefWidth="699.0" style="-fx-background-color: #5a739a;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="267.0">
          <children>
-            <Text layoutX="258.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Fridge" wrappingWidth="387.13427734375">
+            <Text layoutX="193.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Show Fridge" wrappingWidth="313.13427734375">
                <font>
                   <Font size="57.0" />
                </font>
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="PageTwo" layoutX="10.0" layoutY="297.0" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+      <AnchorPane fx:id="PageTwo" layoutX="10.0" layoutY="267.0" prefHeight="487.0" prefWidth="699.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="267.0">
          <children>
             <Text layoutX="256.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input">
                <font>
@@ -32,7 +32,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="PageThree" layoutX="10.0" layoutY="297.0" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+      <AnchorPane fx:id="PageThree" layoutX="10.0" layoutY="267.0" prefHeight="487.0" prefWidth="699.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="267.0">
          <children>
             <Text layoutX="256.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plan">
                <font>
@@ -41,7 +41,7 @@
             </Text>
          </children>
       </AnchorPane>
-      <AnchorPane fx:id="PageFour" layoutX="10.0" layoutY="297.0" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="320.0">
+      <AnchorPane fx:id="PageFour" layoutX="10.0" layoutY="267.0" prefHeight="487.0" prefWidth="699.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="267.0">
          <children>
             <Text layoutX="256.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedual">
                <font>
@@ -50,10 +50,10 @@
             </Text>
          </children>
       </AnchorPane>
-      <Button layoutY="206.0" mnemonicParsing="false" onAction="#changePage1" text="Button1" />
-      <Button layoutX="169.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage2" text="Button2" />
-      <Button layoutX="376.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage3" text="Button3" />
-      <Button layoutX="558.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage4" text="Button4" />
-      <Button layoutX="777.0" layoutY="206.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="28.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage1" prefHeight="25.0" prefWidth="75.0" text="Inventory" />
+      <Button layoutX="167.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage2" prefHeight="25.0" prefWidth="75.0" text="Store" />
+      <Button layoutX="316.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage3" prefHeight="25.0" prefWidth="75.0" text="Needs" />
+      <Button layoutX="456.0" layoutY="206.0" mnemonicParsing="false" onAction="#changePage4" prefHeight="25.0" prefWidth="75.0" text="Schedule" />
+      <Button layoutX="596.0" layoutY="206.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" text="Setting" />
    </children>
 </AnchorPane>
