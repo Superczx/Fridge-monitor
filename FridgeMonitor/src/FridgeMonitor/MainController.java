@@ -12,6 +12,7 @@ import java.util.Date;
 import java.util.ResourceBundle;
 
 import Database.inputData;
+import Database.outputData;
 import FoodTypes.Food;
 import FoodTypes.Schedual;
 import FoodTypes.Store;
@@ -99,6 +100,14 @@ public class MainController implements Initializable {
 //		    ExpiredDate=StoreExpiredDate.getValue().format(formatter);
 		   input.inputData(this.StoreName.getText(),this.StorePos.getText(),Double.valueOf(this.StoreAmount.getText()),
 				   			this.StoreUnit.getText(),this.StoreDateIn.getValue(),this.StoreExpiredDate.getValue());
+		   outputData output=new outputData();
+		   output.outputData();
+	   }
+	   public void clearDataValues(ActionEvent event) {
+		   this.StoreName.clear();
+		   this.StorePos.clear();
+		   this.StoreAmount.clear();
+		   this.StoreUnit.clear();
 		   
 	   }
 	   
