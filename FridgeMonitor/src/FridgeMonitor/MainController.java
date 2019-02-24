@@ -6,6 +6,7 @@ package FridgeMonitor;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.ResourceBundle;
@@ -18,6 +19,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
@@ -37,10 +39,21 @@ public class MainController implements Initializable {
 	   @FXML
 	   private AnchorPane PageFour;
 	   @FXML
-	   private TextField name;
+	   private TextField StoreName;
 	   @FXML
-	   private TextField pos;
-
+	   private TextField StorePos;
+	   @FXML
+	   private TextField StoreAmount;
+	   @FXML
+	   private TextField StoreUnit;
+	   @FXML
+	   private DatePicker StoreDateIn;
+	   @FXML
+	   private DatePicker StoreExpiredDate;
+	   
+//	   String DateIn;
+//	   String ExpiredDate;
+	   
 	   @Override
 	   public void initialize(URL location, ResourceBundle resources) {
 	 
@@ -81,7 +94,12 @@ public class MainController implements Initializable {
 	   }
 	   public void inputStoreValue(ActionEvent event) {
 		   inputData input=new inputData();
-		   input.inputData(this.name.getText());
+//		   DateTimeFormatter formatter= DateTimeFormatter.ofPattern("yyyy-MM-dd");
+//		    DateIn=StoreDateIn.getValue().format(formatter);
+//		    ExpiredDate=StoreExpiredDate.getValue().format(formatter);
+		   input.inputData(this.StoreName.getText(),this.StorePos.getText(),Double.valueOf(this.StoreAmount.getText()),
+				   			this.StoreUnit.getText(),this.StoreDateIn.getValue(),this.StoreExpiredDate.getValue());
+		   
 	   }
 	   
   

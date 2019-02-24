@@ -11,7 +11,7 @@ public class StoreFood extends Food{
 	@Column(name="pos")
 	private String pos;
 	@Column(name="daysLeft")
-	private int daysLeft;
+	private long daysLeft;
 	@Column(name="dateIn")
 	private String dateIn;
 	
@@ -22,10 +22,10 @@ public class StoreFood extends Food{
 	public void setPos(String pos) {
 		this.pos = pos;
 	}
-	public int getDaysLeft() {
+	public long getDaysLeft() {
 		return daysLeft;
 	}
-	public void setDaysLeft(int daysLeft) {
+	public void setDaysLeft(long daysLeft) {
 		this.daysLeft = daysLeft;
 	}
 	public String getDateIn() {

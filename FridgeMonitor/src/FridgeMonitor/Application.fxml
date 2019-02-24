@@ -30,7 +30,7 @@
                   <Font size="27.0" />
                </font>
             </Text>
-            <TextField fx:id="name" layoutX="111.0" layoutY="60.0" promptText="Name">
+            <TextField fx:id="StoreName" layoutX="111.0" layoutY="60.0" promptText="Name">
                <font>
                   <Font size="25.0" />
                </font>
@@ -40,12 +40,44 @@
                   <Font size="26.0" />
                </font>
             </Text>
-            <TextField fx:id="pos" layoutX="627.0" layoutY="58.0" promptText="Forzen or not?">
+            <TextField fx:id="StorePos" layoutX="627.0" layoutY="58.0" promptText="Forzen or not?">
                <font>
                   <Font size="25.0" />
                </font>
             </TextField>
             <Button layoutX="113.0" layoutY="367.0" mnemonicParsing="false" onAction="#inputStoreValue" text="Submit" />
+            <Text layoutX="25.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <TextField fx:id="StoreAmount" layoutX="125.0" layoutY="150.0" promptText="How many?">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="StoreUnit" layoutX="579.0" layoutY="157.0" promptText="Unit">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </TextField>
+            <Text layoutX="479.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="465.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expired Date">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="36.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date In">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="StoreDateIn" layoutX="157.0" layoutY="236.0" prefHeight="46.0" prefWidth="284.0" />
+            <DatePicker fx:id="StoreExpiredDate" layoutX="654.0" layoutY="241.0" prefHeight="57.0" prefWidth="252.0" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="PageThree" layoutX="10.0" layoutY="267.0" prefHeight="487.0" prefWidth="699.0" style="-fx-background-color: #5a739a;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="267.0">
