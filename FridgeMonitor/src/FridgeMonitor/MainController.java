@@ -6,15 +6,21 @@ package FridgeMonitor;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.ResourceBundle;
- 
+
+import Database.inputData;
+import FoodTypes.Food;
+import FoodTypes.Schedual;
+import FoodTypes.Store;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
  
 public class MainController implements Initializable {
  
@@ -30,6 +36,11 @@ public class MainController implements Initializable {
 	   private AnchorPane PageThree;
 	   @FXML
 	   private AnchorPane PageFour;
+	   @FXML
+	   private TextField name;
+	   @FXML
+	   private TextField pos;
+
 	   @Override
 	   public void initialize(URL location, ResourceBundle resources) {
 	 
@@ -68,5 +79,10 @@ public class MainController implements Initializable {
 		   PageFour.setVisible(true);
 		  
 	   }
+	   public void inputStoreValue(ActionEvent event) {
+		   inputData input=new inputData();
+		   input.inputData(this.name.getText());
+	   }
+	   
   
 }
