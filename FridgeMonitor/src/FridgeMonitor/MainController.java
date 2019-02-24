@@ -110,6 +110,13 @@ public class MainController implements Initializable {
 		   this.StoreUnit.clear();
 		   
 	   }
+	   public void clearDataValues(ActionEvent event) {
+		   this.StoreName.clear();
+		   this.StorePos.clear();
+		   this.StoreAmount.clear();
+		   this.StoreUnit.clear();
+		   
+	   }
 	   
   
 }
